@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div><h1>Редактор поста</h1>
+<form action="" id="submitForm">
+    <label for="">Изображение</label>
+        <input type="text" name="imgUrl" placeholder="img url">
+        <label for="">Заголовок</label>
+        <input type="text" name="topText" placeholder="top text">
+        <label for="">Текст поста</label>
+        <input type="text" name="bottomText" placeholder="bottom text">
+        <label for="">Шрифт</label>
+        <input type="text" name="fontName" placeholder="shrift name"><br>
+        <label for="">Высота</label>
+        <input type="number" name="height" min="1" value="150">
+        <label for="">Подпись</label>
+        <input type="text" name="podpis" placeholder="podpis img">
+        <br>  
+        <label for="">Ширина</label>
+        <input type="number" name="width" min="1" value="150">
+        <label for="">Расположение:</label>
+        <select name="position" id="position">
+            <option value="left">left</option>
+            <option value="right">right</option>
+            <option value="center">center</option>
+        </select>
+        <br>
+        <label for="">Цвет текста</label>
+        <input type="color" name="color">
+        <label for="">Размер текста</label>
+        <input type="range" name="fontsize" min="10" max="200">
+        
+    <input type="Submit">
+</form>
+    </div>
+<section id="result">
+</section>
+    
+    <script src="app.js"></script>
+</body>
+</html>
